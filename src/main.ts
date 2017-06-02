@@ -1,9 +1,18 @@
-class Rdant {
-	test() {
-		console.log("why");
+
+class ProtonClient {
+	/**
+	 *
+	 */
+	constructor(host?:string) {
+
+		console.log("DEBUG SHIT")
 	}
 
-	test2(name:string, version:string): number {
-		return 3
+	private priv() {
+
 	}
+}
+
+function testMain() {
+	var p = new ProtonClient("test"); 
 }

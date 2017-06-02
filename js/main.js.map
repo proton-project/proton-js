@@ -1,1 +1,1 @@
-{"version":3,"names":[],"mappings":"","sources":["main.js"],"sourcesContent":["class Rdant {\n    test() {\n        console.log(\"why\");\n    }\n    test2(name, version) {\n        return 3;\n    }\n}\n"],"file":"main.js"}
+{"version":3,"names":[],"mappings":"","sources":["main.js"],"sourcesContent":["class ProtonClient {\n    /**\n     *\n     */\n    constructor(host) {\n        console.log(\"DEBUG SHIT\");\n    }\n    priv() {\n    }\n}\nfunction testMain() {\n    var p = new ProtonClient(\"test\");\n}\n"],"file":"main.js"}

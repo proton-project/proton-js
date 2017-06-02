@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es2015",
+    "target": "es5",
     "module": "commonjs",
     "jsx": "preserve",
-    "inlineSourceMap": true,
-    "moduleResolution": "node",
-    "experimentalDecorators": true
+    "inlineSourceMap": false,
+    "noImplicitAny": true,
+    "strictNullChecks": true
   },
   "exclude": [
     "node_modules"

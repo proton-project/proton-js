@@ -31,8 +31,14 @@ gulp.task('compress', function () {
 	.pipe(concat(outputName + '.js'))
 	.pipe(gulp.dest(distPath))
 	.pipe(rename(outputName + '.min.js'))
-	.pipe(uglify())
+	//.pipe(uglify())
 	.pipe(gulp.dest(distPath));
+});
+
+// JS Copy js assets
+gulp.task('copy:assets', function() {
+    gulp.src('bower_components/binarysocket/client/dist/binarysocket.min.js')
+    .pipe(gulp.dest(jsPath));
 });
 
 //typescript watch
@@ -45,4 +51,4 @@ gulp.task('js:watch', function () {
 	gulp.watch(jsPath + '/**/*.js', ['compress']);
 });
 
-gulp.task("default", ['tsc', 'compress', 'tsc:watch', 'js:watch']);
+gulp.task("default", ['copy:assets', 'tsc', 'compress', 'tsc:watch', 'js:watch']);

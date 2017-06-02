@@ -6,6 +6,7 @@
   "author": "Roland & Wlad",
   "license": "GPLv3",
   "dependencies": {
+    "bower": "^1.8.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.2.2",

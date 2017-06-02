@@ -1,10 +1,15 @@
-class Rdant {
-    test() {
-        console.log("why");
+class ProtonClient {
+    /**
+     *
+     */
+    constructor(host) {
+        console.log("DEBUG SHIT");
     }
-    test2(name, version) {
-        return 3;
+    priv() {
     }
+}
+function testMain() {
+    var p = new ProtonClient("test");
 }
 
 //# sourceMappingURL=main.js.map
