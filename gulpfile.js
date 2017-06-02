@@ -31,7 +31,7 @@ gulp.task('compress', function () {
 	.pipe(concat(outputName + '.js'))
 	.pipe(gulp.dest(distPath))
 	.pipe(rename(outputName + '.min.js'))
-	//.pipe(uglify())
+	.pipe(uglify())
 	.pipe(gulp.dest(distPath));
 });
 
